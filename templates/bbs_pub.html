@@ -1,0 +1,24 @@
+{% extends 'home.html' %}
+
+{% block page-content %}
+<div>
+	<script src="/statics/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/statics/tinymce/js/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+        tinymce.init({
+            selector: "#mytextarea"
+        });
+    </script>
+
+    <h1>我要说:</h1>
+   
+    <form method="post" action=>
+        <textarea id="mytextarea"></textarea>
+    </form>
+    <br/>
+	<input style='width=20px,height=15px,' type='submit' value='提交' />
+	
+	
+
+</div>
+{% endblock %}
